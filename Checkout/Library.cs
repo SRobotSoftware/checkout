@@ -35,7 +35,6 @@ namespace Checkout
                     book.CheckedOut = false;
                     var BookOut = book.Duration;
                     var BookIn = DateTime.Now;
-                    //TimeSpan Result = BookIn - BookOut;
                     Console.WriteLine(book.Title + " was checked out for: " + (BookOut - BookIn).ToString(@"hh\:mm\:ss"));
                     Console.WriteLine("Press any key to Continue");
                     Console.ReadKey();

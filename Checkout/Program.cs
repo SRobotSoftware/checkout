@@ -75,7 +75,7 @@ namespace Checkout
                 Console.Write("Please Select a Book: ");
                 var selection = Console.ReadLine();
                 var OurSelection = lib.SelectBook(selection);
-                Console.WriteLine("You've checked out: " + OurSelection.Title);
+                Console.WriteLine("You've checked out: " + OurSelection.Title + "By: " + OurSelection.Author);
             }
             return true;
         }
